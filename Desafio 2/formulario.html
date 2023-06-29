@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Clínica Médica</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #menu {
+            background-color: black;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            padding: 5px;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #header {
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #content {
+            padding: 1rem;
+            margin-left: 200px;
+            flex-grow: 1;
+        }
+
+        #contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact-form input,
+        #contact-form textarea,
+        #contact-form button {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        #contact-form button {
+            background-color: black;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="habilidade.html">Habilidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Contato</h1>
+
+        <h2>Telefones de Contato</h2>
+        <p>Celular: (81) 98368-7239</p>
+        <p>Whatsapp: (81) 98368-7239</p>
+
+        <h2>Endereço</h2>
+        <p>Avenida Hildebrando de Vasconcelos, 56</p>
+        <p>Recife, Pernambuco</p>
+
+        <h2>Localização</h2>
+        <div id="map">
+            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.077387115465!2d-34.916854588606114!3d-7.990945179664325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab177a51a0f733%3A0x23d0f7b0f24fe465!2sAv.%20Hildebrando%20de%20Vasconcelos%2C%2056%20-%20Dois%20Unidos%2C%20Recife%20-%20PE%2C%2052160-000!5e0!3m2!1spt-BR!2sbr!4v1688076866220!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
+            </iframe>
+        </div>
+
+        <h2>Formulário de Contato</h2>
+        <form id="contact-form" action="enviar_contato.php" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="assunto" placeholder="Assunto" required>
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
+    <hr>
+
+    <div id="footer">
+        <p>Site de estudos feito por <a href="https://vmfas.github.io/projetosWeb/portfolio/index.html">Vinicius
+                Miguel</a></p>
+    </div>
+</body>
+
+</html>
