@@ -1,0 +1,18 @@
+.pai {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+.filho {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+body {
+    border: 1px solid blue;
+    background-color: green;
+}

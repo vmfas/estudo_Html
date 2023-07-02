@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+footer > p > a {
+    color: white;
+}
+
+footer > p > a:hover {
+    color: red;
+}
+
+aside {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    padding: 1rem;
+    text-align: justify;
+    width: 3rem;
+}
+
+aside > p {
+    display: fixed;
+    position: absolute;
+    bottom: 50%;
+}
+
+#esquerda {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    height: 90vh;
+    padding: 1rem;
+    text-align: justify;
+    width: 3rem;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}

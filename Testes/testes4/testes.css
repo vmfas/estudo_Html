@@ -1,0 +1,28 @@
+#pai {
+    border: 1px solid black;
+    height: 800px;
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filhos {
+    border: 1px solid black;
+    height: 200px;
+    width: 100px;
+}
+
+#pai1 {
+    border: 1px solid black;
+    height: 800px;
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filhos1 {
+    border: 1px solid black;
+    height: 200px;
+    width: 100px;
+}

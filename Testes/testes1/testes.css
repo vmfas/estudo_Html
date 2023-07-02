@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --cor1: rgb(0, 174, 255);
+    --cor2: rgb(225, 0, 255);
+}
+
+html {
+    font-size: 62,5%; /*isso faz com que 1rem = 10px oq deixa mais fácil de manipular o código*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 1.2rem;
+}
+
+table {
+    text-align: center;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.342);
+    color: var(--cor2);
+}
+
+ul {
+    list-style: circle;
+}
+
+input {
+    margin-bottom: .1rem;
+}
+
+/*é about this e tá tudo good*/
+article {
+    background-color: var(--cor1);
+    color: white;
+    
+}
+
+#div + p { /*Vai mexer no primeiro parágrafos depois da div com ID 'div'*/
+    color: red;
+}
+
+p.azul { /*Marca todos os parágrafos com a class azul*/
+    color: rgb(0, 68, 255);
+}
+div > p { /*seleciona todos os parágrafos que são filhos da div*/
+    color: rgb(9, 255, 0);
+}
